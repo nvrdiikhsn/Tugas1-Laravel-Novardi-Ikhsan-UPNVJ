@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Genres</title>
+</head>
+<body>
+    <h1>Selamat Datang di Halaman Genre Buku</h1>
+    <p>Ini adalah halaman yang menampilkan daftar genre buku yang tersedia.</p>
+
+    @foreach ($genres as $genre)
+    <ul>
+        <li>{{ $genre['id'] }}</li>
+        <li>{{ $genre['name'] }}</li>
+    </ul>
+    @endforeach
+</body>
+</html>
